@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     contentWidth  = MediaQuery.of( context ).size.width;
-    contentHeight = MediaQuery.of( context ).size.height - MediaQuery.of( context ).padding.top;
+    contentHeight = MediaQuery.of( context ).size.height - MediaQuery.of( context ).padding.top - MediaQuery.of( context ).padding.bottom;
 
     Widget body = MyWebView( "https://www.google.com/", width: contentWidth, height: contentHeight );
 //    Widget body = MyWebViewFromAsset( "assets/test.html", width: contentWidth, height: contentHeight );
